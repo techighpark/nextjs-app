@@ -9,7 +9,6 @@ export const metadata: Metadata = {
     }
 };
 export default function AboutUsCompanyLayout({ children }: Readonly<{ children: React.ReactNode; }>) {
-    console.log('AboutUsCompanyLayout')
     return (
         <div>
             AboutUsCompanyLayout

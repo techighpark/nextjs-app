@@ -1,5 +1,4 @@
 
-import { Metadata } from "next";
 import { Suspense } from "react";
 import MovieInfo, { getMovie } from "../../../components/movies/movie-information";
 import MovieVideos from "../../../components/movies/movie-videos";
@@ -15,7 +14,6 @@ interface IParams {
 export async function generateMetadata({ params }: IParams) {
     // cache 하기때문에 여러번 호출해도 된다
     const movie = await getMovie(params.id)
-    console.log(movie)
     return {
         title: movie.title
     }
