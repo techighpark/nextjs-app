@@ -1,4 +1,4 @@
-import { API_URL } from "../../app/movies/page";
+import { API_URL } from "@/libs/constats";
 import potato from "../../styles/movie-info.module.css";
 
 export async function getMovie(id: string) {
